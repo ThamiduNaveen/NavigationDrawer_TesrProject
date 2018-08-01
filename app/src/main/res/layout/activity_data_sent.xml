@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdae64"
+    tools:context=".dataSentActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/download" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutAbove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/editText_activityData_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your email address"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLayoutAbove"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/editText_activityData_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter the password"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_dataSent_viewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Incoming data"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/button_dataSentActivity_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/my_custom_login_button"
+        android:text="login"
+        android:textSize="30sp" />
+
+    <View
+        android:id="@+id/view_down"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#014051" />
+
+    <View
+        android:id="@+id/view_up"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/view_down"
+        android:background="#fc7e3f" />
+
+</RelativeLayout>
