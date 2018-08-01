@@ -33,4 +33,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="148dp"
         android:text="Change Backgbround" />
+
+    <Button
+        android:id="@+id/button_fragOne_mediaPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Media Player" />
 </RelativeLayout>

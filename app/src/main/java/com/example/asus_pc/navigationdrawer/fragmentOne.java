@@ -1,6 +1,7 @@
 package com.example.asus_pc.navigationdrawer;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -25,6 +26,16 @@ public class fragmentOne extends Fragment {
         final Button showToast = (Button) getActivity().findViewById(R.id.button_fragOne_toast);
         final Button chageBG = (Button) getActivity().findViewById(R.id.button_fragOne_background);
         final RelativeLayout rl = (RelativeLayout) getActivity().findViewById(R.id.layout_fragOne);
+
+        Button mediaBT = (Button) getActivity().findViewById(R.id.button_fragOne_mediaPlayer);
+
+        mediaBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent fragOne_media = new Intent(getActivity(),mediaPlayerActivity.class);
+                startActivity(fragOne_media);
+            }
+        });
 
         showToast.setOnClickListener(new View.OnClickListener() {
             @Override

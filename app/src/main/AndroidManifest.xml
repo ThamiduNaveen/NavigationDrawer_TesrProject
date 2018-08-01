@@ -24,7 +24,8 @@
         </activity>
         <activity android:name=".adActivity" />
         <activity android:name=".dataSentActivity" />
-        <activity android:name=".cardViewActivity"></activity>
+        <activity android:name=".cardViewActivity" />
+        <activity android:name=".mediaPlayerActivity"></activity>
     </application>
 
 </manifest>
