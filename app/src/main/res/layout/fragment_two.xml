@@ -13,4 +13,13 @@
         android:layout_marginTop="227dp"
         android:text="Two"
         android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_fragTwo_cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Card view" />
 </RelativeLayout>

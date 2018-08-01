@@ -23,7 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".adActivity" />
-        <activity android:name=".dataSentActivity"></activity>
+        <activity android:name=".dataSentActivity" />
+        <activity android:name=".cardViewActivity"></activity>
     </application>
 
 </manifest>
